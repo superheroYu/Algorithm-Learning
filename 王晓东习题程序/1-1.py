@@ -15,7 +15,7 @@ def cal_zeroCount(n: int) -> int:
 
 
 def re_num(ls: list) -> int:
-    # 解码整数，如将[4, 3, 5]解码为整数534
+    # 解码整数，如将列表[4, 3, 5]解码为整数534
     real_num = 0
     for digit, num in enumerate(ls):
         real_num += num * (10 ** digit)
@@ -70,7 +70,7 @@ if __name__ == '__main__':
         for j in s:
             count[int(j)] += 1
     t2 = time.time()
-    print("使用循环计算得到正确解：0有{}个，1有{}个，2有{}个，3有{}个，4有{}个，5有{}个，6有{}个，7有{}个，8有{}个，9有{}个".format(*count))
+    print("使用依次循环计算得到正确解：0有{}个，1有{}个，2有{}个，3有{}个，4有{}个，5有{}个，6有{}个，7有{}个，8有{}个，9有{}个".format(*count))
     print("耗时：%.6f" % (t2-t1))
 
     t3 = time.time()
