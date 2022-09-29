@@ -11,7 +11,7 @@ int main()
 {
     ifstream input("data\\input1_2.txt");
     ofstream outfile("data/output1_2.txt");
-    if (!input) cout << "文件打开错误" << endl;
+    if (!input) cout << "文件打开错误！" << endl;
     else
     {
         int k=10;
