@@ -6,7 +6,7 @@ def f(n): return n*(10**(n-1))  # 计算所有n位组成页码每个数字的个
 
 
 def cal_zeroCount(n: int) -> int:
-    # 计算多余的0数量
+    # 计算多余的0的数量
     zeroCount = 0
     zeroCount += n-1  # 第一排
     for i in range(1, n):
